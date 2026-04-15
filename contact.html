@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1d1b18",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#9eccf0",
+                    "surface-variant": "#e7e1dc",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary": "#00273c",
+                    "inverse-primary": "#ffb3b2",
+                    "tertiary-container": "#003e5c",
+                    "tertiary-fixed": "#c9e6ff",
+                    "surface": "#fef8f3",
+                    "primary-fixed": "#ffdad9",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "on-tertiary-fixed-variant": "#174b6a",
+                    "surface-dim": "#dfd9d4",
+                    "primary": "#51000d",
+                    "on-background": "#1d1b18",
+                    "inverse-surface": "#32302d",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f3ede8",
+                    "on-secondary-fixed-variant": "#594400",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#7ba9cc",
+                    "on-secondary-container": "#705600",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdf92",
+                    "outline-variant": "#e0bfbe",
+                    "primary-container": "#7a0019",
+                    "surface-tint": "#ae2e39",
+                    "surface-bright": "#fef8f3",
+                    "surface-container-highest": "#e7e1dc",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "on-tertiary-fixed": "#001e2f",
+                    "background": "#fef8f3",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#755b00",
+                    "on-surface-variant": "#584141",
+                    "on-primary-container": "#ff7b7f",
+                    "on-primary-fixed": "#410009",
+                    "secondary-fixed-dim": "#f2c025",
+                    "outline": "#8c7070",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fecb32",
+                    "surface-container-high": "#ede7e2",
+                    "surface-container-low": "#f9f3ed",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f6f0ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Work Sans"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #7a0019 0%, #51000d 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fef8f3]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<div class="text-2xl font-bold tracking-tighter text-[#7A0019] dark:text-stone-100 font-headline">
+                BizDogs
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="events.html">Events</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="join.html">Join Us</a>
+<a class="text-[#7A0019] font-bold border-b-2 border-[#FFCC33] pb-1 transition-colors duration-200" href="contact.html">Contact Us</a>
+</div>
+<button class="bg-primary-container text-on-primary text-sm font-label px-6 py-2.5 rounded-lg font-bold tracking-wide scale-95 active:opacity-80 transition-all hover:shadow-lg">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-3/5">
+<h1 class="font-headline font-extrabold text-5xl md:text-6xl text-primary tracking-tight leading-[1.1] mb-6">
+                        Let's connect your <br/><span class="text-secondary">ambition</span> with our pack.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed font-body">
+                        Whether you're a prospective member, a recruiter, or a fellow student organization, we're ready to start the conversation. Visit us in the heart of campus.
+                    </p>
+</div>
+<div class="hidden md:block w-full md:w-2/5 relative">
+<div class="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-xl z-0"></div>
+<img alt="University of Minnesota campus architecture" class="relative z-10 w-full h-96 object-cover rounded-xl shadow-lg" data-alt="Modern university building with brick facade and large glass windows under a clear blue sky at the University of Minnesota campus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOA8OIMUbNZryYdiUxgs9m-15kDMcwMGJGAfTZVGLUpZr1Cs0K5vHvTwWSUCl4cMxqV22EERbCHij2zDnFHvMpkZp5Rtq1mobimYxs3tw9yaqWBTt56ScJCQlVrl_hGkakBs855frOv_oKxBBJwgbkd7nl4ZpJmiIRdDWUXntl_CHslf16U8eUWR6L-ZRv0FU-Rtz8KMgI83_YZOzB_WYEFkpinQ2Uqy77hidRhe78Rkk1uoge936SiDKJN9QXaRZOufIB0j4lC_Q"/>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Bento Grid Layout -->
+<section class="px-8 pb-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form Column -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/20">
+<h2 class="font-headline font-bold text-3xl text-primary mb-8">Send us a message</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant">Full Name</label>
+<input class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-stone-400" placeholder="Goldy Gopher" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant">Email Address</label>
+<input class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-stone-400" placeholder="gopher001@umn.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant">Subject</label>
+<select class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+<option>Membership Inquiry</option>
+<option>Sponsorship Opportunities</option>
+<option>Event Collaboration</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-semibold text-on-surface-variant">Message</label>
+<textarea class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-stone-400" placeholder="How can we help you?" rows="5"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-label font-bold py-4 rounded-lg hover:bg-primary-container transition-all shadow-md active:scale-[0.98]" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+<!-- Info Cards Column -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Office Location Card -->
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-secondary">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="location_on">location_on</span>
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-2">Office Location</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                    Lake Superior Hall, Suite 204<br/>
+                                    University of Minnesota Twin Cities<br/>
+                                    Minneapolis, MN 55455
+                                </p>
+<a class="inline-flex items-center mt-4 text-primary font-semibold hover:underline group" href="#">
+                                    Get Directions 
+                                    <span class="material-symbols-outlined ml-1 text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Social Media Card -->
+<div class="bg-primary text-white p-8 rounded-xl relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]" data-icon="share">share</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-6">Connect with the Pack</h3>
+<div class="space-y-6 relative z-10">
+<a class="flex items-center gap-4 group" href="#">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-secondary-container group-hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="photo_camera" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest font-label text-white/60">Follow our journey</p>
+<p class="font-bold text-lg">@BizDogsUMN</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-secondary-container group-hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest font-label text-white/60">Inquiries via Email</p>
+<p class="font-bold text-lg">bizdogs@umn.edu</p>
+</div>
+</a>
+</div>
+</div>
+<!-- Map Integration Placeholder -->
+<div class="flex-grow bg-surface-container-highest rounded-xl min-h-[240px] relative group overflow-hidden">
+<img alt="Campus Map View" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-700" data-alt="Abstracted stylized top-down map of a university campus with clean lines and maroon and gold color accents" data-location="Minneapolis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyedidLrwUEqRtRvddzirQUv7vdhjjD-KlHWLIMMXTFlSD3KgujRwraQqFLoMZi0W_48Q-ScUJzkBDrkVSFMa183WNX3_iJBJSi9kORvZ078o_aLr2SVR0du_-0Ich_oYygdme8g3LgsD97sDVWBU3DJkzAIoZwxEPR-W2IDFYvmPWi763nd1w135UToPeiqvzhMo0e9pnom4n9JXACl7BWuXZY8bhlRDpJW-RqDc-sbO-qjYabDQtZDwCVQi1_YDAQefoQZYo-Z4"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<div class="bg-surface p-4 rounded-lg shadow-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="push_pin" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+<span class="font-label font-bold text-primary">Lake Superior Hall</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="bg-surface-container-low py-20 px-8">
+<div class="max-w-7xl mx-auto text-center">
+<div class="inline-block w-12 h-1 bg-secondary mb-8"></div>
+<h2 class="font-headline font-extrabold text-4xl text-primary mb-6 tracking-tight">Stay updated with the pack.</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto mb-10 text-lg">
+                    Subscribe to our weekly "Business Bites" digest for meeting recaps, career opportunities, and upcoming campus networking events.
+                </p>
+<div class="max-w-md mx-auto flex gap-2">
+<input class="flex-grow px-6 py-4 bg-surface-container-lowest border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-primary outline-none" placeholder="Your academic email" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-label font-bold hover:brightness-95 transition-all shadow-sm">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900">
+<div class="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="font-manrope font-extrabold text-[#7A0019] text-xl">BizDogs</div>
+<p class="text-stone-500 dark:text-stone-400 font-work-sans text-sm leading-relaxed max-w-xs">
+                    Empowering the next generation of business leaders at the University of Minnesota through community, career, and connection.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] transition-opacity" href="#">UMN Contact</a>
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] transition-opacity" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] transition-opacity" href="#">Academic Affiliation</a>
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] transition-opacity" href="#">Student Portal</a>
+</div>
+</div>
+<div class="flex flex-col items-start md:items-end gap-4">
+<div class="text-[#7A0019] dark:text-[#FFCC33] font-work-sans text-sm font-bold">University of Minnesota Twin Cities</div>
+<p class="text-stone-500 dark:text-stone-400 font-work-sans text-sm text-left md:text-right">
+                    © 2024 BizDogs University of Minnesota. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

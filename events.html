@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Events | BizDogs University of Minnesota</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1d1b18",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#9eccf0",
+                    "surface-variant": "#e7e1dc",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary": "#00273c",
+                    "inverse-primary": "#ffb3b2",
+                    "tertiary-container": "#003e5c",
+                    "tertiary-fixed": "#c9e6ff",
+                    "surface": "#fef8f3",
+                    "primary-fixed": "#ffdad9",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "on-tertiary-fixed-variant": "#174b6a",
+                    "surface-dim": "#dfd9d4",
+                    "primary": "#51000d",
+                    "on-background": "#1d1b18",
+                    "inverse-surface": "#32302d",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f3ede8",
+                    "on-secondary-fixed-variant": "#594400",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#7ba9cc",
+                    "on-secondary-container": "#705600",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdf92",
+                    "outline-variant": "#e0bfbe",
+                    "primary-container": "#7a0019",
+                    "surface-tint": "#ae2e39",
+                    "surface-bright": "#fef8f3",
+                    "surface-container-highest": "#e7e1dc",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "on-tertiary-fixed": "#001e2f",
+                    "background": "#fef8f3",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#755b00",
+                    "on-surface-variant": "#584141",
+                    "on-primary-container": "#ff7b7f",
+                    "on-primary-fixed": "#410009",
+                    "secondary-fixed-dim": "#f2c025",
+                    "outline": "#8c7070",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fecb32",
+                    "surface-container-high": "#ede7e2",
+                    "surface-container-low": "#f9f3ed",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f6f0ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Work Sans"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #51000d 0%, #7a0019 100%);
+        }
+        .heritage-stripe {
+            border-left: 4px solid #fecb32;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fef8f3]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<div class="text-2xl font-bold tracking-tighter text-[#7A0019] dark:text-stone-100 font-headline">
+                BizDogs
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-[#7A0019] font-bold border-b-2 border-[#FFCC33] pb-1 transition-colors duration-200" href="events.html">Events</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="join.html">Join Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#7A0019] transition-colors duration-200" href="contact.html">Contact Us</a>
+</div>
+<button class="bg-primary-container text-on-primary text-sm font-label px-6 py-2.5 rounded-lg font-bold tracking-wide scale-95 active:opacity-80 transition-all hover:shadow-lg">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 z-10">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-xs font-bold rounded-full mb-6 font-label uppercase tracking-widest">Collegiate Excellence</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight leading-none mb-6">
+                        Professional <br/><span class="text-secondary">Milestones.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed mb-8">
+                        Experience the nexus of academic rigor and industry insight. Our events are curated to transform ambitious students into seasoned professionals.
+                    </p>
+</div>
+<div class="md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-full h-full border-2 border-secondary/20 rounded-xl translate-x-4 translate-y-4"></div>
+<img alt="Academic Event" class="relative z-10 w-full h-[400px] object-cover rounded-xl shadow-2xl" data-alt="Modern university lecture hall with students focused on a presentation with warm collegiate lighting and professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzKKiVVUDagobmcb7Hs_c5vl-SqCQIW2DFJ-dr0DOlRZAHn-Htul__Pa4QfICbxTbgk-2qTm1GECGXPNZ7E9C5lJ0CcBjkfbEbJaQiDPZ7fMVzPm1n_UQJIxoLEJn-WahIjS-omWnXR6KB9NrLxeT1lMhvCbzyT5jVT0d2E2JqzVzqFz0TEhtkg7YqjfUkQAieKY5qgCmCiwXojBVihKi01vJ3r5ZCZio-WqYwVCetgluak9_Oq9va1jzmw0vzzMnLoGOltcql6SA"/>
+</div>
+</div>
+</section>
+<!-- Events Calendar Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="heritage-stripe pl-6">
+<h2 class="text-3xl font-headline font-bold text-primary">Upcoming Engagements</h2>
+<p class="text-on-surface-variant mt-2">The BizDogs Fall 2024 Semester Schedule</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-full border border-outline-variant hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button class="p-2 rounded-full border border-outline-variant hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Events Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured Event -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex flex-col md:flex-row gap-8 shadow-sm hover:shadow-md transition-shadow">
+<div class="md:w-1/3">
+<div class="bg-primary-container text-on-primary-container rounded-lg p-6 text-center">
+<span class="block text-sm font-label uppercase tracking-widest opacity-80">October</span>
+<span class="block text-5xl font-headline font-extrabold my-2">14</span>
+<span class="block text-sm font-label font-bold">2024</span>
+</div>
+<div class="mt-6 space-y-4">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<span class="text-sm font-medium">6:00 PM - 8:30 PM</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span class="text-sm font-medium">Carlson School, RM 1-124</span>
+</div>
+</div>
+</div>
+<div class="md:w-2/3">
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Strategic Leadership: A Guest Speaker Series with Target Executives</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                                Join us for an exclusive evening with the Strategy &amp; Innovation team from Target HQ. Gain insights into large-scale retail operations, corporate decision-making frameworks, and networking opportunities for summer internships.
+                            </p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-semibold text-primary">Networking</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-semibold text-primary">Corporate Strategy</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-semibold text-primary">Target HQ</span>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label font-bold text-sm hover:brightness-95 transition-all">
+                                Register for Session
+                            </button>
+</div>
+</div>
+<!-- Side Event 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-4">
+<div class="text-primary font-headline font-bold">
+<span class="text-xs uppercase tracking-tighter block opacity-60">Oct 21</span>
+<span class="text-xl">Case Comp Prep</span>
+</div>
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+                            A deep-dive workshop on financial modeling and presentation decks for the upcoming Deloitte Case Competition.
+                        </p>
+<a class="text-primary font-bold text-sm flex items-center gap-2 group" href="#">
+                            Event Details <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Side Event 2 -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">groups</span>
+</div>
+<div class="relative z-10">
+<div class="text-on-primary-container font-headline font-bold mb-4">
+<span class="text-xs uppercase tracking-tighter block opacity-80">Nov 02</span>
+<span class="text-xl">Site Visit: UnitedHealth Group</span>
+</div>
+<p class="text-sm opacity-90 mb-6 leading-relaxed">
+                                Behind the scenes at one of Minnesota's Fortune 5 giants. Transportation provided from West Bank.
+                            </p>
+<button class="bg-white text-primary px-4 py-2 rounded font-label font-bold text-xs">
+                                Limited Spots Left
+                            </button>
+</div>
+</div>
+<!-- Side Event 3 -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-6 flex items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Collaborative Event" class="w-32 h-32 rounded-lg object-cover hidden sm:block" data-alt="Candid photo of business students collaborating around a table with laptops and coffee in a modern university student union" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAImv70IBRrHNNjH-B-DxRdPJiRP60cBEt-mYiQNjwLMeTnnVhhmDT9JG8VikU65vD2hbVczWkHmixnbR39aEeE2vALEDM61im9ajXrDja2dG-CW_Ghdo_PI7cTpNxi-DHdnm3oDvmYg9ob0GjPdvSTpaGX-opeJtQ1hbc_eiHHTyWHy06Ey8Ip4VJgzl1Rg9qwivNIFEYHvpcZFfWKv0tn1937iMcAmvNWM-lP4EN3KdK01q9qLUnWg-zlMY0ovWLUoR8hOGxNI94"/>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-headline font-bold text-primary">Monthly Coffee &amp; Connections</h3>
+<span class="text-xs font-bold text-secondary-container bg-primary px-2 py-1 rounded">Recurring</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4">
+                                Informal social gathering at Starbucks on Washington Ave. No RSVP required, just bring your questions and curiosity.
+                            </p>
+<div class="flex items-center gap-4 text-xs font-medium text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">event</span> Every 1st Tuesday</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">timer</span> 8:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Photo Gallery Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-extrabold text-primary mb-4 tracking-tight">The BizDogs Legacy</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Relive our recent site visits, speaker sessions, and student mixers that define the BizDogs experience.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+<!-- Gallery Item 1 -->
+<div class="relative group overflow-hidden rounded-xl md:row-span-2">
+<img alt="Speaker Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional business presentation session in a glass-walled conference room with urban Minneapolis skyline in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoEzYA3Ql0Z7jkejZo7DSfJcZx4MileF9gDMRtX2ogzgavBZ2w66RP2_Ul3cyeuf1sTVkG1mjEK6NCF3xBndsS4C3ICqeNjG-i67mtfWoXvlq_CGuU2EzdUYdMJIuiPrivw3BOK-lL9-6U_J7uPUbyf4vN65Ra2wupvEb1DtOD55a0Dcm2Ul64OaUjCP6mif1m3FwRxDPn5K_ryQvuhsPgpUG9rMahKri_bGwIXB-tgavN6vhystnBlpPVN1i9QwQrSOcUS1oySKQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+<span class="text-white text-xs font-bold">Speaker Series</span>
+<p class="text-white text-[10px] opacity-80 leading-tight">Innovation Lab Guest Lecture</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="relative group overflow-hidden rounded-xl md:col-span-2">
+<img alt="Social Gathering" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Diverse group of university students smiling and posing together in a modern student union lounge, collegiate casual attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKL8MuROI3GHxA_iVtvsyH_MPlcuyCR5NsL7eiOHmvbndOSvL0N3YXVBpas-snE9sCgWI32lTnGzpxZhz8aK3hH4MnbGTo1TpZNS1gvtfePqSxIUYxGnuDCwr0M4xJqcn5IxWxmD0BbNmbiQaoTw5iBLTs6-uRLk2HdXrsdvxJAVBxEZ8jrrvruXmOogxyIcqcLFLDQS83alS7Jjob8C90Kqs5VHri72BJOkl_NX26NxKE6UkaVwiy4BDtzKYFcyQ2ioFfofPgWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+<span class="text-on-secondary-container text-xs font-bold">Fall Mixer 2023</span>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Site Visit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Architecture of a modern corporate skyscraper in downtown Minneapolis with golden reflections from the setting sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUrnT-zg5nsL_wAk6PlMSQS2peY-vX44GP913AZXVztOtnenoB_tXpHYbS2KHHvqnyNC48DFJm0U-gXhdtc25Le8UWXAUiKKp58woEWTqOsofycAZyKIiDiOWZpJS4-qfh4B-GwVYI7Y5wNniMhjushAZIkScerQ0FzJi7lSxOJyzfB4BeMDLiAtnTI_BlDE48WTirBJvkh95tKQMLNyE9IdFGh5wDSV2tPlU5RJjVFKQEdLjFncZZDoGfUsNGx9WTmfjftxpspcQ"/>
+</div>
+<!-- Gallery Item 4 -->
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Collaboration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of three hands stacked in the center in a team gesture, professional business attire, symbolic of unity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2L1CN8wLUD5C_hHihvIKOhWg435IeROhGtj-opplzgFPrTAhRPWYYm9ZEvXaNW658qTlQXls3JIl30s2f3fz3zXP8tQtCqB1WgdEqiYtSsIVXaIFlHauoBd9bN_2zcNxTgxmy9KYU7CkUwcV3I42GXdZ3wdNrfB9ZaWsgNjPIban97yiG8syReeaEemi9JNHPWHSLmZ8JvQlL9NHBPWIuR71TS_FzR4PnDRiMghzzCttdfxWxF4JCayTa_g8GPjNK55ewkFoZYX4"/>
+</div>
+<!-- Gallery Item 5 -->
+<div class="relative group overflow-hidden rounded-xl md:col-span-2">
+<img alt="Conference" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Large audience of students attending a business conference, shallow depth of field, warm indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBilx9UpEf9iKfUmTJPmCFh2X98qa7i40jUyIL_-vv073hbQX_Wsb4APafUkoXVdG2aqjWlqeZ54eGT04KC1HqwgEF6_f80SwUH1Z5cNxZs_VN6Nvx9dynNNOYfoJRg7hkNWv7Zl52UHZbtAJlDK-KP9R3p57L7VLkuDHehODYktbhf_w8sJlOaATuARB3hwYkmFOyL3BU-b2IqWR6Gjs56J6mone0csRxpTH3Dn-MAzwBPaZ9xSkpaWoUMod_5dA4Gr2iKoTAltHg"/>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="text-primary font-bold font-label flex items-center gap-2 mx-auto hover:gap-4 transition-all">
+                    View Complete Archive <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-primary py-20 px-8 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-headline font-bold mb-6">Don't Miss the Next Opportunity.</h2>
+<p class="text-lg opacity-80 mb-10 leading-relaxed">Join 200+ Carlson and University of Minnesota students shaping the future of Minnesota business.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all">
+                        Join BizDogs
+                    </button>
+<button class="bg-white/10 backdrop-blur text-white border border-white/20 px-10 py-4 rounded-lg font-label font-bold hover:bg-white/20 transition-all">
+                        Subscribe to Newsletter
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full border-t border-stone-200 dark:border-stone-800">
+<div class="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="font-manrope font-extrabold text-[#7A0019] text-xl mb-4">BizDogs</div>
+<p class="text-stone-500 dark:text-stone-400 font-work-sans text-sm leading-relaxed max-w-xs">
+                    The premier business and professional development organization at the University of Minnesota. Bridging the gap between the classroom and the boardroom.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline font-bold text-primary dark:text-[#FFCC33] mb-2">Quick Links</h4>
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] dark:hover:text-[#FFCC33] underline transition-opacity" href="#">Academic Affiliation</a>
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] dark:hover:text-[#FFCC33] transition-opacity" href="#">Student Portal</a>
+<a class="text-stone-500 dark:text-stone-400 font-work-sans text-sm hover:text-[#7A0019] dark:hover:text-[#FFCC33] transition-opacity" href="#">Privacy Policy</a>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary dark:text-[#FFCC33] mb-2">Connect</h4>
+<div class="flex gap-4 mb-6">
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+</div>
+<p class="text-stone-500 dark:text-stone-400 font-work-sans text-sm">UMN Contact: bizdogs-board@umn.edu</p>
+</div>
+</div>
+<div class="px-8 py-6 border-t border-stone-200 dark:border-stone-800 text-center">
+<p class="text-stone-500 dark:text-stone-400 font-work-sans text-xs opacity-90">
+                © 2024 BizDogs University of Minnesota. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
